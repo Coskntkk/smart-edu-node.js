@@ -1,0 +1,33 @@
+<%- include('partials/_header'); %>
+
+
+
+
+
+<% if(user.role==='teacher' ) { %>
+  
+  <%- include('roles/_teacher'); %>
+
+<% } %>
+
+
+
+<% if(user.role==='student' ) { %>
+  
+  <%- include('roles/_student'); %>
+
+<% } %>
+  
+
+
+<% if(user.role==='admin' ) { %>
+  
+  <%- include('roles/_admin'); %>
+
+<% } %>
+
+
+
+
+
+<%- include('partials/_footer'); %>
